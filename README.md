@@ -65,16 +65,16 @@ Here , next_obs is observaion space of the next state after taking action a
 
 ## Steps per episode and Returns per episode graphs :
 ### For monte carlo:
-<img width="650"  alt="image" src="https://github.com/ak-1203/Reinforcement-Learning/blob/main/mc.png">
+<img width="650"  alt="image" src="results/minigrid/mc.png">
 
 ### For Sarsa:
-<img width="650"  alt="image" src="sarsa_0.png">
+<img width="650"  alt="image" src="results/minigrid/sarsa_0.png">
 
 ### For Sarsa(λ):
-<img width="650"  alt="image" src="sarsaλ_2.png">
+<img width="650"  alt="image" src="results/minigrid/sarsaλ_2.png">
 
 ### For Q-learning:
-<img width="650"  alt="image" src="q_learn.png">
+<img width="650"  alt="image" src="results/minigrid/q_learn.png">
 
 
     
