@@ -4,10 +4,12 @@
 
 This repository documents various tasks and insights gained through the study of Reinforcement Learning (RL). It includes detailed explanations of the environments used, graphical results from the implementation of different algorithms, and an overview of the challenges encountered during the process.
 
-## Task 1: Solving Frozen Lake Environment using Dynamic Programming
+## Solving Frozen Lake Environment using Dynamic Programming
 
 ### Documentation:  
-[Frozen Lake Environment Documentation](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/)
+[Frozen Lake Environment Documentation](https://www.gymlibrary.dev/environments/toy_text/frozen_lake/)  
+
+Frozen lake involves crossing a frozen lake from Start(S) to Goal(G) without falling into any Holes(H) by walking over the Frozen(F) lake. The agent may not always move in the intended direction due to the slippery nature of the frozen lake. 
 
 ### Frozen Lake Environment Overview
 
@@ -48,10 +50,11 @@ The agent can take one of four possible actions:
 
 ---
 
-## Task 2: Implementation of Model-Free Control Algorithms in the Minigrid Empty Space Environment
+## Implementation of Model-Free Control Algorithms in the Minigrid Empty Space Environment
 
 ### Documentation:  
-[Minigrid Empty Space Environment Documentation](https://minigrid.farama.org/environments/minigrid/EmptyEnv/)
+[Minigrid Empty Space Environment Documentation](https://minigrid.farama.org/environments/minigrid/EmptyEnv/)  
+Minigrid Empty Space Environment, as the name suggests, contains no obstacles between the start and the goal, making it an ideal setting for validating various Reinforcement Learning (RL) algorithms. The objective is to navigate the agent to the green square, where a sparse reward is provided upon successful completion.  
 
 ### Minigrid Environment Overview
 
