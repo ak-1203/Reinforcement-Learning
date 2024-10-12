@@ -40,7 +40,15 @@ The agent can take one of four possible actions:
 | 0     | Turn Left  |
 | 1     | Turn Down  |
 | 2     | Turn Right |
-| 3     | Turn Up    |
+| 3     | Turn Up    |  
+
+#### Transition Matrix , P :
+For each pair of states in `[1, nS]` and actions in `[1, nA]`, `P[state][action]` is a tuple in the form of `(probability, next_state, reward, terminal)`.
+
+- **Non-Slippery Nature**: This represents deterministic behavior of the environment, meaning the transition probabilities for any state-action pair are always `1`.
+  
+- **Slippery Nature**: This represents stochastic behavior of the environment, where, for any given state and action, the transition probability is typically `1/3` (or `0.33`). Due to this, the agent may not always move in the intended direction.
+
 #### Rewards:  
 - **1 :**  On Reaching the goal  
 - **0 :**  Otherwise  
