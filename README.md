@@ -1,6 +1,6 @@
 # Reinforcement Learning
 
-## Description
+## Overview
 
 This repository documents various tasks and insights gained through the study of Reinforcement Learning (RL). It includes detailed explanations of the environments used, graphical results from the implementation of different algorithms, and an overview of the challenges encountered during the process.
 
@@ -43,8 +43,8 @@ The agent can take one of four possible actions:
 - **1 :**  On Reaching the goal  
 - **0 :**  Otherwise  
 
-## Frozen Lake Result:  
-![PI and VI result](result-gif.gif)  
+### Frozen Lake Result:  
+![PI and VI result](results/frozen_lake/result-gif.gif)  
 
 ---
 
@@ -103,7 +103,7 @@ When an action `a` is taken:
 
 ---
 
-## Minigrid Results:
+### Minigrid Results:
 
 ### Monte Carlo:
 ![Monte Carlo Results](results/minigrid/mc.png)
@@ -116,3 +116,4 @@ When an action `a` is taken:
 
 ### Q-Learning:
 ![Q-Learning Results](results/minigrid/q_learn.png)
+
