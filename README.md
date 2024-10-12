@@ -12,8 +12,13 @@ This repository documents various tasks and insights gained through the study of
 ### Frozen Lake Environment Overview
 
 #### Observation Space:  
-Consider a 4x4 grid for discussion purposes:  
-- **env.observation_space = Discrete(16)**  
+
+Consider a 4x4 grid for discussion purpose:  
+
+<img src="https://github.com/user-attachments/assets/a8b10a1c-c9c2-4eac-9825-89a005c17324" alt="image" width="300" height="300">  
+
+  
+- **Observation space = Discrete(16)**  
 - Each state is represented by a number ranging from 0 to 15.  
 - A custom map can be defined, with each state labeled as S (Start), F (Frozen), H (Hole), or G (Goal).  
 - In the default map, S is at 0 and G is at 15.  
@@ -35,8 +40,8 @@ The agent can take one of four possible actions:
 | 2     | Turn Right |
 | 3     | Turn Up    |
 #### Rewards:  
-- **1:** On Reaching the goal  
-- **0:** Otherwise  
+- **1 :**  On Reaching the goal  
+- **0 :**  Otherwise  
 
 ---
 
@@ -48,6 +53,8 @@ The agent can take one of four possible actions:
 ### Minigrid Environment Overview
 
 #### Observation Space:  
+<img src="https://github.com/user-attachments/assets/1bfd2221-4bf6-4d6f-9586-28ef213b07e0" alt="image" width="300" height="300">
+
 - **env.observation_space = { 'image': Box(0, 255, (7, 7, 3), uint8), 'direction': Discrete(4), 'mission': "Get to the green square" }**  
 
 **Key Elements:**
@@ -85,10 +92,15 @@ When an action `a` is taken:
 - `done`: Boolean, `True` if the agent reaches the goal (termination condition).  
 - `truncated`: Boolean, `True` if the episode terminates due to exceeding `max_steps`.  
 - `info`: Additional information about the state.
+#### Reward Function : 
+- **Success:** A reward is calculated using the formula:  
+  `Reward = 1 - 0.9 * (step_count / max_steps)`
+
+- **Failure:** A reward of `0` is given.
 
 ---
 
-## Results: Steps per Episode and Returns per Episode
+## Minigrid Results:
 
 ### Monte Carlo:
 ![Monte Carlo Results](results/minigrid/mc.png)
