@@ -43,6 +43,9 @@ The agent can take one of four possible actions:
 - **1 :**  On Reaching the goal  
 - **0 :**  Otherwise  
 
+## Frozen Lake Result:  
+![PI and VI result](result-gif.gif)  
+
 ---
 
 ## Task 2: Implementation of Model-Free Control Algorithms in the Minigrid Empty Space Environment
